@@ -12,12 +12,13 @@
     <script>
         var input=121;
         var sum=0;
+        var input2=input;
         while (input != 0) {
             var num=(input % 10);
             sum=(sum * 10)+num;
             input=(input - num)/10;
         }
-        if(input == sum) {
+        if(input2 == sum) {
             console.log("palindrome");
         }
         else{
